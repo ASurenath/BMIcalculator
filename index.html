@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style id="style1">
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container text-center mx-auto my-3 p-5">
+        <h1>BMI Calculator</h1>
+        <div class="text-start">
+            <label for="w1">Your weight :  </label><input id="w1" type="number">
+
+            <div class="group">
+                <input id="kg1" value="kg" type="radio" name="wunit" onchange="changeWUnit()" checked>
+                &nbsp;
+                <label for="kg1">
+                kg
+                </label> 
+                &nbsp;&nbsp;
+                <input id="lbs1" value="lbs" type="radio" name="wunit" onchange="changeWUnit()">
+                &nbsp;
+                <label for="lbs1">
+                    lbs
+                </label>
+            </div>
+
+            <br>
+            
+                <label for="w1">Your height :  </label><input id="h1" type="number">
+                <div class="group">
+                <input id="cm1" value="cm" type="radio" name="hunit" onchange="changeHUnit()" checked>
+                &nbsp;
+                <label for="cm1">
+                    cm
+                </label> 
+                &nbsp;&nbsp;
+                <input id="in1" value="in" type="radio" name="hunit" onchange="changeHUnit()">
+                &nbsp;
+                <label for="in1">
+                    in
+                </label>
+    
+            </div>
+        </div>
+        <button class="btn btn-success btn-lg m-4" onclick="calculate()">Go!</button>
+
+        
+        <div id="bmidisplay">
+
+        </div>
+        <div id="bmimessage"></div>
+        
+    </div>
+</body>
+<script src="./script.js">
+</script>
+
+</html>

@@ -1,0 +1,62 @@
+body{
+    /* background-color:#004a57; */
+    background-image: linear-gradient(to right bottom,#e9e447 ,rgb(219, 91, 179)) ;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-size: 1.2em;
+
+}
+
+.container{
+    color: rgb(72, 1, 72);
+    width: min(95vw , 500px);
+    height: min(80vh , 600px);
+    border-radius: 20%;
+    border-style: none solid solid none;
+    box-shadow: -20px -20px 50px rgba(0, 0, 0, 0.225), 20px 20px 50px rgba(255, 255, 255, 0.225);
+
+
+    border-width: 10px;
+    border-color: rgba(255, 255, 255, 0.353);
+}
+input[type=number]{
+    width:25%;
+    height: 2em;
+    margin-top: 5%;
+    border: none;
+    border-radius: 5px;
+}
+input[type=number]:focus{
+
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.717);
+}
+input{
+    margin:3%;
+}
+input[type=radio]{
+    transform: scale(1.5);
+}
+#bmimessage{
+    text-shadow: 0 0 2px rgb(105, 105, 105);
+}
+.units{
+    width:35%;
+}
+.group{
+    display:inline-flex;
+    flex-wrap: nowrap;
+}
+@media((min-width:300px) and (max-width:500px)){
+    body{
+    font-size: 1em;
+    }
+}
+@media(max-width:300px){
+    body{
+    font-size: 0.8em;
+    }
+}
+
+
